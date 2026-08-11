@@ -12,6 +12,18 @@
 - **章节分页**：每个一级标题另起一页（LibreOffice 兼容方案）
 - **自动化验证**：`validate_submission.py` 7 项检查（HTML 残留 / 三线表 / 列宽 / 上标 / 图片 / 页码 / 属性匿名），任一 FAIL 必须修复后才能交付
 
+## 兼容性（多 Agent 实测）
+
+本技能不是 Hermes 专属——SKILL.md + Python 脚本平台无关，**Claude Code / Kimi Code / Codex / Pi 全部实测可用**（2026-08-11，各 Agent 均成功加载技能并跑通验证脚本 7/7）：
+
+| Agent | 安装方式 | 实测 |
+|-------|---------|------|
+| Hermes | 复制到 `~/.hermes/skills/productivity/` | ✓ |
+| Claude Code | 复制到 `~/.claude/skills/` | ✓ |
+| Kimi Code | 复制到 `~/.kimi-code/skills/` | ✓ |
+| Codex | 复制到 `~/.codex/skills/` | ✓ |
+| Pi | `pi install git:github.com/MartyYao/journal-submission-docx-skill` | ✓ |
+
 ## 安装
 
 ```bash
